@@ -13,7 +13,7 @@ This project is designed to automate the process of generating minutes of meetin
 
 ### Environment Setup
 
-1. **Install UV**: Ensure you have `uv` installed on your system. You can find installation instructions on the [UV official website](https://example.com).
+1. **Install UV**: Ensure you have `uv` installed on your system. You can find installation instructions on the [UV official website](https://docs.astral.sh/uv/).
 
 2. **Create Environment**: Use the following command to create the environment:
 
