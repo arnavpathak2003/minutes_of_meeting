@@ -1,0 +1,6 @@
+.env
+__pycache__/
+lib/
+.DS_Store
+src/minutes_of_meeting/crews/send_email/tools/credentials.json
+src/minutes_of_meeting/crews/send_email/tools/token.json

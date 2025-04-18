@@ -1,0 +1,19 @@
+gmail_send_task:
+  description: >
+    Send an email to the client with the meeting minutes using the provided body: {body}.
+    The email must be actually sent to the recipient, not just saved as a draft.
+  expected_output: >
+    A dictionary containing:
+    - success: boolean indicating if the email was successfully sent
+    - message_id: the ID of the sent message if successful
+    - error: error message if any
+    - status: 'sent' if successful, 'failed' if not
+  success_criteria:
+    - Email is successfully delivered to the recipient
+    - A valid message ID is returned
+    - No errors occurred during sending
+  error_handling:
+    - Retry on temporary failures
+    - Report specific error messages for debugging
+  agent: gmail_draft_agent
+  timeout: 300 # 5 minutes timeout for the entire operation
